@@ -4,22 +4,22 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
   <title>mjrouser - Website</title>
-  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="src/img/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="src/img/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="src/img/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="src/img/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="src/img/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="src/img/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="src/img/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="src/img/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="src/img/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="src/img/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="src/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="src/img/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="src/img/favicon-16x16.png">
   <link rel="manifest" href="/manifest.json">
   <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="msapplication-TileImage" content="src/img/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
 
   <!-- CSS  -->
@@ -34,7 +34,7 @@
     <nav class="white" role="navigation">
     <div class="container">
      <div class="nav-wrapper">
-      <a id="logo-container" href="index.html" class="brand-logo"><img src="img/Logo_2.svg" style="height:45px; padding-top: 10px;" alt="MJR"></a>
+      <a id="logo-container" href="index.html" class="brand-logo"><img src="src/img/Logo_2.svg" style="height:45px; padding-top: 10px;" alt="MJR"></a>
       <ul class="right hide-on-med-and-down">
         <li><a href="#about">About</a></li>
         <li><a href="#work">Work</a></li>
@@ -53,7 +53,7 @@
   </header>   
 <main>
    <div class="parallax-container">
-    <div class="parallax"><img src="img/splash.png"  alt="Unsplashed background img 1"></div>
+    <div class="parallax"><img src="src/img/splash.png"  alt="Unsplashed background img 1"></div>
    </div>
 
    <div id="about" class="section white">
@@ -72,17 +72,21 @@
 
 
    <div class="parallax-container">
-      <div class="parallax"><img src="img/splash2.png" alt="Unsplashed background img 2"></div>
+      <div class="parallax"><img src="src/img/splash2.png" alt="Unsplashed background img 2"></div>
    </div>
 
-
-   <div id="work" class="section white">
-      <!--   Icon Section   -->
+<!--   Recent Work Section   -->
+   <div id="work" class="section white">      
+      <div class="row container">
+        <div class="col s12 center">
+          <h2>Recent Projects</h2>
+        </div>
+      </div>  
       <div class="row container">
          <div class="col s12 m4">
             <div class="icon-block">
                <a href="projects.html" alt="projects">
-               <img src="img/neighborhood-dev.png" alt="" class="responsive-img">
+               <img src="src/img/neighborhood-dev.png" alt="" class="responsive-img">
                <h5 class="center">Property.boston.gov</h5>
                </a>
                <p class="light">DND works to develop affordable housing accross the city. It is very important to us to make the process tansparent and accessible to constituents.</p>
@@ -92,7 +96,7 @@
          <div class="col s12 m4">
             <div class="icon-block">
                <a href="projects.html" alt="projects">
-               <img src="img/metrolist_logo.jpg" alt="" class="responsive-img">
+               <img src="src/img/metrolist_logo.jpg" alt="" class="responsive-img">
                <h5 class="center">Metrolist</h5>
                </a>
 
@@ -103,7 +107,7 @@
          <div class="col s12 m4">
             <div class="icon-block">
                <a href="projects.html" alt="projects">
-               <img src="img/bostons-way-home.png" alt="" class="responsive-img">
+               <img src="src/img/bostons-way-home.png" alt="" class="responsive-img">
                <h5 class="center">Homeless Data Warehouse and Resource Matching Engine</h5>
                </a>
 
@@ -115,7 +119,7 @@
          <div class="col s12 m4">
             <div class="icon-block">
                <a href="projects.html" alt="projects">
-               <img src="img/salesforce_logo.png" alt="" class="responsive-img">
+               <img src="src/img/salesforce_logo.png" alt="" class="responsive-img">
                <h5 class="center">Salesforce Implementation</h5>
                </a>
                <p class="light">DND works to develop affordable housing accross the city. It is very important to us to make the process tansparent and accessible to constituents.</p>
@@ -125,7 +129,7 @@
          <div class="col s12 m4">
             <div class="icon-block">
                <a href="projects.html" alt="projects">
-               <img src="img/metrolist_logo.jpg" alt="" class="responsive-img">
+               <img src="src/img/metrolist_logo.jpg" alt="" class="responsive-img">
                <h5 class="center">Metrolist</h5>
                </a>
 
@@ -136,7 +140,7 @@
          <div class="col s12 m4">
             <div class="icon-block">
                <a href="projects.html" alt="projects">
-               <img src="img/bostons-way-home.png" alt="" class="responsive-img">
+               <img src="src/img/bostons-way-home.png" alt="" class="responsive-img">
                <h5 class="center">Homeless Data Warehouse and Resource Matching Engine</h5>
                </a>
 
@@ -149,7 +153,7 @@
 
 
   <div class="parallax-container">
-    <div class="parallax"><img src="img/splash3.png" alt="Unsplashed background img 3"></div>
+    <div class="parallax"><img src="src/img/splash3.png" alt="Unsplashed background img 3"></div>
   </div>
    <div id="connect" class="section white">
       <!--   Icon Section   -->

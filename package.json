@@ -2,9 +2,11 @@
   "name": "personal",
   "version": "1.0.0",
   "description": "personal site for mjrouser",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start": "http-server",
+    "build": ""
   },
   "author": "mjrouser",
   "license": "MIT",
