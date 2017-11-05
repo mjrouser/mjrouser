@@ -34,10 +34,10 @@ gulp.task('scripts', function() {
     .pipe(jshint('.jshintrc'))
     .pipe(jshint.reporter('default'))
     .pipe(concat('main.js'))
-    .pipe(gulp.dest('dist/src/js'))
+    .pipe(gulp.dest('dist/src/scripts'))
     .pipe(rename({suffix: '.min'}))
     .pipe(uglify())
-    .pipe(gulp.dest('dist/src/js'))
+    .pipe(gulp.dest('dist/src/scripts'))
     .pipe(notify({ message: 'Scripts task complete' }));
 });
 
