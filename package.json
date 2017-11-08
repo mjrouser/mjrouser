@@ -2,14 +2,18 @@
   "name": "personal",
   "version": "1.0.0",
   "description": "personal site for mjrouser",
+  "author": "mjrouser",
+  "repository" : { 
+    "type" : "git", 
+    "url" : "https://github.com/mjrouser/mjrouser.git"
+  },
+  "license": "MIT",
   "main": "index.html",
   "scripts": {
     "test": "test",
     "start": "http-server",
     "build": ""
   },
-  "author": "mjrouser",
-  "license": "MIT",
   "devDependencies": {
     "del": "^2.2.2",
     "gulp": "^3.9.1",
