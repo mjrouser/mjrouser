@@ -19,6 +19,7 @@ var gulp = require('gulp'),
 gulp.task('markup', function() {
   return gulp.src('*.html')
     .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(htmlmin({removeComments: true}))
     .pipe(gulp.dest('dist/'))
     .pipe(notify({ message: 'html task complete' }));
 });
