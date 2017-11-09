@@ -195,33 +195,26 @@
 </main>
    <footer id="connect" class="page-footer grey darken-4">
       <div class="container">
-         <div class="row valign-wrapper">
-            <div class="col s4 ">
-            </div>
-            <div class="col s1">
-               <a href="https://www.linkedin.com/in/mjrouser/" title="">
-                  <img src="src/img/linkedin.svg" alt="" class="circle responsive-img sicon">
-               </a>
-            </div>
-            <div class="col s1">
-               <a href="https://twitter.com/mjrouser">
-                  <img src="src/img/twitter.svg" alt="" class="circle responsive-img sicon">
-               </a>  
-            </div>
-            <div class="col s1">
-               <a href="https://www.behance.net/mrouser">
-                  <img src="src/img/behance.svg" alt="" class="circle responsive-img sicon">
-               </a>  
-            </div>
-            <div class="col s1">
-               <a href="https://github.com/mjrouser">
-                  <img src="src/img/github-circle.svg" alt="" class="circle responsive-img sicon">
-               </a>   
-            </div> 
-            <div class="col s4">
-              
-            </div>          
+         <div class="row center-align ">
+            <a href="https://www.linkedin.com/in/mjrouser/" title="">
+              <img src="src/img/linkedin.svg" alt="" class="circle center-align responsive-img sicon">
+            </a>
+            <a href="https://twitter.com/mjrouser">
+              <img src="src/img/twitter.svg" alt="" class="circle center-align responsive-img sicon">
+            </a>  
+            <a href="https://www.behance.net/mrouser">
+               <img src="src/img/behance.svg" alt="" class="circle center-align responsive-img sicon">
+            </a>  
+            <a href="https://github.com/mjrouser">
+               <img src="src/img/github-circle.svg" alt="" class="circle center-align responsive-img sicon">
+            </a>   
          </div>
+         <div class="row center-align">
+            <a class="twitter-share-button center-align" href="https://twitter.com/intent/tweet?text=Meet%20@mjouser!"> Tweet </a>
+            <script src="//platform.linkedin.com/in.js" type="text/javascript" class="center-align"> lang: en_US</script>
+            <script type="IN/Share" data-url="http://mjrouser.com"></script>
+         </div>
+
       </div>
       <div class="footer-copyright center-align">
          <div class="container">
@@ -236,7 +229,24 @@
 
   <script src="lib/jquery/jquery-3.1.1.min.js"></script>
     <script src="lib/materialize/js/materialize.min.js"></script>
+  <script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+  }(document, "script", "twitter-wjs"));</script>
   <script src="src/scripts/main.js"></script>
+
 
   </body>
 </html>
