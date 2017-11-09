@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "personal site for mjrouser",
   "author": "mjrouser",
-  "repository" : { 
-    "type" : "git", 
-    "url" : "https://github.com/mjrouser/mjrouser.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mjrouser/mjrouser.git"
   },
   "license": "MIT",
   "main": "index.html",
@@ -20,15 +20,19 @@
     "gulp-autoprefixer": "^3.1.1",
     "gulp-cache": "^0.4.5",
     "gulp-concat": "^2.6.0",
+    "gulp-connect": "^5.0.0",
     "gulp-cssnano": "^2.1.2",
     "gulp-htmlmin": "^3.0.0",
     "gulp-imagemin": "^3.0.3",
     "gulp-jshint": "^2.0.1",
     "gulp-livereload": "^3.8.1",
     "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.1.0",
     "gulp-rename": "^1.2.2",
     "gulp-ruby-sass": "^2.1.0",
     "gulp-uglify": "^2.0.0",
+    "gulp-util": "^3.0.8",
+    "gulp-watch": "^4.3.11",
     "jshint": "^2.9.3"
   }
 }

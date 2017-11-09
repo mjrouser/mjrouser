@@ -1,6 +1,4 @@
 var gulp = require('gulp'),
-    //sass = require('gulp-ruby-sass'),
-    autoprefixer = require('gulp-autoprefixer'),
     cssnano = require('gulp-cssnano'),
     jshint = require('gulp-jshint'),
     uglify = require('gulp-uglify'),
@@ -10,11 +8,15 @@ var gulp = require('gulp'),
     notify = require('gulp-notify'),
     cache = require('gulp-cache'),
     livereload = require('gulp-livereload'),
-    del = require('del');
-    htmlmin = require('gulp-htmlmin');
+    del = require('del'),
+    htmlmin = require('gulp-htmlmin'),
+    connect = require('gulp-connect'),
+    gutil = require('gulp-util'),
+    watch = require('gulp-watch');
 
 
-gulp.task('html', function() {
+/*#######   Build tasks  ######*/
+gulp.task('markup', function() {
   return gulp.src('*.html')
     .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest('dist/'))
@@ -27,7 +29,6 @@ gulp.task('styles', function() {
         .pipe(gulp.dest('dist/src/styles'))
         .pipe(notify({ message: 'Styles task complete' }));
 });
-
 
 gulp.task('scripts', function() {
   return gulp.src('src/scripts/**/*.js')
@@ -49,30 +50,58 @@ gulp.task('images', function() {
 });
 
 gulp.task('clean', function() {
-    return del(['dist/src/css', 'dist/src/js', 'dist/src/img']);
+    return del(['dist/src/styles', 'dist/src/scripts', 'dist/src/img']);
 });
 
+/*### Dev Tasks  ###*/
 gulp.task('watch', function() {
-
-  // Watch .scss files
+  // Watch .css files
   gulp.watch('src/styles/**/*.css', ['styles']);
-
   // Watch .js files
   gulp.watch('src/scripts/**/*.js', ['scripts']);
-
   // Watch image files
   gulp.watch('src/img/**/*', ['images']);
-  
   // Create LiveReload server
   livereload.listen();
-
   // Watch any files in dist/, reload on change
   gulp.watch(['dist/**']).on('change', livereload.changed);
-
 });
 
-gulp.task('build', ['clean','html', 'styles', 'scripts', 'images']);
+gulp.task('connect', function() {
+  connect.server({
+    livereload: true
+  });
+});
 
+ //Watch files for Livereload
+gulp.task('watch', function (){
+  //watch html files
+  gulp.watch(['./*.html'], ['html']);
+  //watch css files
+  gulp.watch(['./src/**/*.css'],['css']);
+  //watch js files
+  gulp.watch(['./src/**/*.js'],['js'])
+});
+
+//Live watching and reloading of html and css
+gulp.task('html', function (){
+  gulp.src('./*.html')
+    .pipe(connect.reload());
+});
+gulp.task('css',function(){
+  gulp.src('./src/**/*.css')
+    .pipe(connect.reload());
+});
+gulp.task('js',function(){
+  gulp.src('./src/**/*.js')
+    .pipe(connect.reload());
+});
+
+/*##### Ops tasks #####*/
+//Minifies and optimizes code for site
+gulp.task('build', ['clean','markup', 'styles', 'scripts', 'images']);
+
+// Default task.  Serves the app during development.  Enter 'gulp' on the command line.
 gulp.task('default', ['connect', 'watch'], function(){
    return gutil.log('Gulp is running!')
 });
