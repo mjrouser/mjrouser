@@ -56,11 +56,15 @@ p {
   
 }
 
-h5{
-  /*
-  color: #388e3c;
-  */
+a>h5 {
+  color: black;
 }
+
+a>h5:hover {
+  color: black;
+  text-decoration: underline dotted;
+}
+
 
 hr{
   color: #388e3c;
