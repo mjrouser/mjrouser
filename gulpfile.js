@@ -12,7 +12,8 @@ var gulp = require('gulp'),
     htmlmin = require('gulp-htmlmin'),
     connect = require('gulp-connect'),
     gutil = require('gulp-util'),
-    watch = require('gulp-watch');
+    watch = require('gulp-watch'),
+    ghPages = require('gulp-gh-pages');
 
 
 /*#######   Build tasks  ######*/
@@ -33,8 +34,8 @@ gulp.task('styles', function() {
 
 gulp.task('scripts', function() {
   return gulp.src('src/scripts/**/*.js')
-    .pipe(jshint('.jshintrc'))
-    .pipe(jshint.reporter('default'))
+    //.pipe(jshint('.jshintrc'))
+    //.pipe(jshint.reporter('default'))
     .pipe(concat('main.js'))
     .pipe(gulp.dest('dist/src/scripts'))
     .pipe(rename({suffix: '.min'}))
@@ -101,6 +102,11 @@ gulp.task('js',function(){
 /*##### Ops tasks #####*/
 //Minifies and optimizes code for site
 gulp.task('build', ['clean','markup', 'styles', 'scripts', 'images']);
+
+gulp.task('deploy', function() {
+   gulp.src('./dist/**/*')
+    .pipe(ghPages());
+});
 
 // Default task.  Serves the app during development.  Enter 'gulp' on the command line.
 gulp.task('default', ['connect', 'watch'], function(){
