@@ -12,7 +12,8 @@
   "scripts": {
     "test": "test",
     "start": "http-server",
-    "deploy": "npm run gulp build && git subtree push --prefix dist origin gh-pages"
+    "build": "gulp build",
+    "deploy": "npm run build && git subtree push --prefix dist origin gh-pages"
   },
   "devDependencies": {
     "del": "^2.2.2",
