@@ -105,11 +105,7 @@ gulp.task('build', ['clean','markup', 'styles', 'scripts', 'images']);
 
 gulp.task('deploy', function() {
    return gulp.src('dist/**/*')
-    .pipe(ghPages({
-      remoteUrl: "https://github.com/mjrouser/mjrouser.git",
-      branch: "gh-pages",
-      force: true
-    }));
+    .pipe(ghPages());
 });
 
 // Default task.  Serves the app during development.  Enter 'gulp' on the command line.

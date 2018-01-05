@@ -19,6 +19,10 @@ p {
   color: #388e3c;
 }
 
+.parallax-sub-container {
+  height: 300px;
+}
+
 .parallax-container .section {
     width: 100%;
 }
@@ -72,6 +76,16 @@ hr{
 }
 .sub-head{
   color: #388e3c;
+}
+
+.sub-head-white{
+  color: #ffffff;
+}
+
+.sub-head-div{
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
 }
 footer.page-footer {
   margin: 0;
