@@ -51,8 +51,14 @@ gulp.task('images', function() {
     .pipe(notify({ message: 'Images task complete' }));
 });
 
+gulp.task('lib-copy', function (){
+  return gulp.src(['lib/**/*','browserconfig.xml', 'CNAME'])
+     .pipe(gulp.dest('dist/lib'))
+     .pipe(notify({ message: 'lib-copy task complete' }));
+});
+
 gulp.task('clean', function() {
-    return del(['dist/src/styles', 'dist/src/scripts', 'dist/src/img']);
+    return del(['dist/**/*']);
 });
 
 /*### Dev Tasks  ###*/
@@ -101,7 +107,7 @@ gulp.task('js',function(){
 
 /*##### Ops tasks #####*/
 //Minifies and optimizes code for site
-gulp.task('build', ['clean','markup', 'styles', 'scripts', 'images']);
+gulp.task('build', ['clean','markup', 'styles', 'scripts', 'images', 'lib-copy']);
 
 gulp.task('deploy', function() {
    return gulp.src('dist/**/*')
