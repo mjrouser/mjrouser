@@ -17,6 +17,8 @@ var gulp = require('gulp'),
 
 
 /*#######   Build tasks  ######*/
+
+
 gulp.task('markup', function() {
   return gulp.src('*.html')
     .pipe(htmlmin({collapseWhitespace: true}))
@@ -52,14 +54,22 @@ gulp.task('images', function() {
 });
 
 gulp.task('lib-copy', function (){
-  return gulp.src(['lib/**/*','browserconfig.xml', 'CNAME'])
+  return gulp.src('lib/**/*')
      .pipe(gulp.dest('dist/lib'))
      .pipe(notify({ message: 'lib-copy task complete' }));
 });
 
 gulp.task('clean', function() {
-    return del(['dist/**/*']);
+    return del(['dist/lib/*', 'dist/src/*', '*.html']);
 });
+
+/*
+gulp.task('config-copy', function (){
+  return gulp.src(['browserconfig.xml'], ['CNAME'])
+     .pipe(gulp.dest('dist/'))
+     .pipe(notify({ message: 'config-copy task complete' }));
+});
+*/
 
 /*### Dev Tasks  ###*/
 gulp.task('watch', function() {
