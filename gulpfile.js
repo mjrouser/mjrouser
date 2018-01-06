@@ -60,7 +60,7 @@ gulp.task('lib-copy', function (){
 });
 
 gulp.task('clean', function() {
-    return del(['dist/lib/*', 'dist/src/*', '*.html']);
+    return del(['dist/lib/*', 'dist/src/*', 'dist/*.html']);
 });
 
 /*

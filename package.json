@@ -13,7 +13,8 @@
     "test": "test",
     "start": "http-server",
     "build": "gulp build",
-    "deploy": "npm run build && git subtree push --prefix dist origin gh-pages"
+    "deploy": "gulp deploy",
+    "publish": "npm run build && deploy"
   },
   "devDependencies": {
     "del": "^2.2.2",
