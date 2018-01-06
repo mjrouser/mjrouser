@@ -63,13 +63,13 @@ gulp.task('clean', function() {
     return del(['dist/lib/*', 'dist/src/*', 'dist/*.html']);
 });
 
-/*
+
 gulp.task('config-copy', function (){
-  return gulp.src(['browserconfig.xml'], ['CNAME'])
+  return gulp.src(['browserconfig.xml', 'CNAME'])
      .pipe(gulp.dest('dist/'))
      .pipe(notify({ message: 'config-copy task complete' }));
 });
-*/
+
 
 /*### Dev Tasks  ###*/
 gulp.task('watch', function() {
@@ -117,7 +117,7 @@ gulp.task('js',function(){
 
 /*##### Ops tasks #####*/
 //Minifies and optimizes code for site
-gulp.task('build', ['clean','markup', 'styles', 'scripts', 'images', 'lib-copy']);
+gulp.task('build', ['clean','markup', 'styles', 'scripts', 'images', 'lib-copy', 'config-copy']);
 
 gulp.task('deploy', function() {
    return gulp.src('dist/**/*')
