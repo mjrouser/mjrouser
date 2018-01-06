@@ -1,7 +1,7 @@
 .jshintrc
 .DS_Store
 .sass-cache/*
-node_modules/
+node_modules
 .publish
-dist/
+dist
 .yarnclean
