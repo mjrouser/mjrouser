@@ -65,7 +65,7 @@ gulp.task('clean', function() {
 
 
 gulp.task('config-copy', function (){
-  return gulp.src(['browserconfig.xml', 'CNAME'])
+  return gulp.src(['browserconfig.xml', 'CNAME', 'manifest.json'])
      .pipe(gulp.dest('dist/'))
      .pipe(notify({ message: 'config-copy task complete' }));
 });
