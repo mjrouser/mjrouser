@@ -19,8 +19,12 @@ p {
   color: #388e3c;
 }
 
+.btn-floating:hover{
+  background-color: #4ba850;
+}
+
 .expando {
-  color: #388e3c;
+  background-color: #388e3c;
 }
 
 .parallax-sub-container {
@@ -73,9 +77,9 @@ a>h5:hover {
   text-decoration: underline dotted;
 }
 
-a.waves-effect {
-  overflow-x: visible;
-  overflow-y: visible;
+
+div.card-image.waves-effect {
+  overflow: visible;
 }
 
 
