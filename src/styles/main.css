@@ -19,6 +19,10 @@ p {
   color: #388e3c;
 }
 
+.expando {
+  color: #388e3c;
+}
+
 .parallax-sub-container {
   height: 300px;
 }
@@ -67,6 +71,11 @@ a>h5 {
 a>h5:hover {
   color: black;
   text-decoration: underline dotted;
+}
+
+a.waves-effect {
+  overflow-x: visible;
+  overflow-y: visible;
 }
 
 
