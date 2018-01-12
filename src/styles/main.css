@@ -11,7 +11,7 @@ p {
 }
 
 .col1{
-  background-color: #ECBA82;
+  background-color: #4E6E58;
 }
 
 .col2{
@@ -23,7 +23,11 @@ p {
 }
 
 .col4 {
-  background-color: #262A10;
+  background-color: #849483;
+}
+
+.col5 {
+  background-color: #D0CCD0;
 }
 
 .button-collapse {
