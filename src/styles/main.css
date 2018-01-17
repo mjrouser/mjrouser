@@ -73,6 +73,7 @@ p {
 
 .icon-block {
   padding: 0 15px;
+
 }
 .icon-block .material-icons {
   font-size: inherit;
@@ -80,7 +81,16 @@ p {
   color: #33691e;
   */
   color: #388e3c;
-  
+}
+
+.col-border{
+  border: 1px;
+  border-color: #CCC;
+  border-style: solid;
+}
+
+.col-border:hover{
+  background-color: rgba(0, 0, 0, 0.1)
 }
 
 .section{
@@ -93,7 +103,7 @@ p {
 }
 
 a>h5 {
-  color: white;
+  color: black;
   margin: auto;
 }
 
