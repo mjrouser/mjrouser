@@ -83,13 +83,18 @@ p {
   color: #388e3c;
 }
 
-.col-border{
+
+ 
+.col-cell{
   border: 1px;
   border-color: #CCC;
   border-style: solid;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
 }
 
-.col-border:hover{
+.col-cell:hover{
   background-color: rgba(0, 0, 0, 0.1)
 }
 
@@ -100,6 +105,11 @@ p {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 0;
+}
+
+.text-box{
+  flex: 1;
+  padding: 1rem;
 }
 
 a>h5 {
