@@ -1,6 +1,8 @@
 /* Custom Stylesheet */
 
-
+html{
+  font-family: 'Libre Franklin', sans-serif; 
+}
 nav ul a,
 nav .brand-logo {
   color: #444;
@@ -111,11 +113,13 @@ p {
 .text-box{
   flex: 1;
   padding: 1rem;
+  padding-top: 1.75rem;
 }
 
 a>h5 {
   color: black;
   margin: auto;
+  font-weight: 500;
 }
 
 a>h5:hover {
