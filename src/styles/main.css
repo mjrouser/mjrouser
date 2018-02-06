@@ -13,19 +13,32 @@ p {
 }
 
 .col1{
+  /*
   background-color: #4E6E58;
+  */
+  background-color: #536DFE;
 }
 
 .col2{
+  /*
   background-color: #81C14B;
+  */
+  background-color: #448AFF;
 }
 
 .col3 {
+  /*
   background-color: #ABDF75;
+  */
+  background-color: #40C4FF;
 }
 
 .col4 {
+  /*
   background-color: #849483;
+  */
+
+  background-color:  #18FFFF;
 }
 
 .col5 {
@@ -33,15 +46,24 @@ p {
 }
 
 .button-collapse {
+  /*
   color: #388e3c;
+  */
+  color: #3F51B5;
 }
 
 .btn-floating:hover{
+  /*
   background-color: #4ba850;
+  */
+  background-color: #536DFE;
 }
 
 .expando {
+  /*
   background-color: #388e3c;
+  */
+  background-color: #3F51B5;
 }
 
 .parallax-sub-container {
@@ -74,19 +96,22 @@ p {
 }
 
 .icon-block {
-  padding: 0 15px;
+  padding:  15px;
 
 }
-.icon-block .material-icons {
+h2>.material-icons {
+  
   font-size: inherit;
-  /*
-  color: #33691e;
-  */
+  
   color: #388e3c;
 }
 
 
- 
+
+.btn, .btn-floating, .btn-large {
+  background-color: #3F51B5;
+}
+
 .col-cell{
   border: 1px;
   border-color: #CCC;
@@ -133,11 +158,17 @@ div.card-image.waves-effect {
 
 
 hr{
+  /*
   color: #388e3c;
+  */
+  color: #3F51B5;
   max-width: 50%;
 }
 .sub-head{
+  /*
   color: #388e3c;
+  */
+  color: #3F51B5
 }
 
 .sub-head-white{
