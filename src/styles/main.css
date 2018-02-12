@@ -15,15 +15,20 @@ p {
 .col1{
   /*
   background-color: #4E6E58;
-  */
+  
   background-color: #536DFE;
+  */
+  background: linear-gradient(#ffffff, #536DFE) 
 }
 
 .col2{
   /*
   background-color: #81C14B;
-  */
+  
   background-color: #448AFF;
+  */
+  background: linear-gradient(#ffffff, #448AFF)
+
 }
 
 .col3 {
@@ -119,7 +124,10 @@ h2>.material-icons {
   display: flex;
   flex-direction: column;
   padding: 0 !important;
-  
+}
+
+.simple-linear {
+  background: linear-gradient(#ffffff, #536DFE) 
 }
 
 .col-cell:hover{
@@ -164,6 +172,11 @@ hr{
   color: #3F51B5;
   max-width: 50%;
 }
+
+.headline{
+  color: #3F51B5;
+}
+
 .sub-head{
   /*
   color: #388e3c;
