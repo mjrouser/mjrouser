@@ -49,8 +49,8 @@ gulp.task('scripts', function() {
 gulp.task('images', function() {
   return gulp.src('src/img/**/*')
     .pipe(cache(imagemin({ optimizationLevel: 5, progressive: true, interlaced: true })))
-    .pipe(gulp.dest('dist/src/img'))
-    .pipe(notify({ message: 'Images task complete' }));
+    .pipe(gulp.dest('dist/src/img'));
+    //.pipe(notify({ message: 'Images task complete' }));
 });
 
 gulp.task('lib-copy', function (){
