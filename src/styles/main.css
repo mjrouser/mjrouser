@@ -26,28 +26,35 @@ p {
   background-color: #81C14B;
   
   background-color: #448AFF;
-  */
-  background: linear-gradient(#ffffff, #448AFF)
+     */
 
+  background: linear-gradient(#ffffff, #448AFF);
 }
 
 .col3 {
   /*
   background-color: #ABDF75;
-  */
+  
   background-color: #40C4FF;
+  */
+  background: linear-gradient(#ffffff, #40C4FF)
 }
 
 .col4 {
   /*
   background-color: #849483;
-  */
+  
 
   background-color:  #18FFFF;
+*/
+  background: linear-gradient(#ffffff, #18FFFF)
 }
 
 .col5 {
+  /*
   background-color: #D0CCD0;
+  */
+  background: linear-gradient(#ffffff, #D0CCD0)
 }
 
 .button-collapse {
@@ -57,11 +64,16 @@ p {
   color: #3F51B5;
 }
 
-.btn-floating:hover{
+.btn-large:hover{
   /*
   background-color: #4ba850;
   */
   background-color: #536DFE;
+}
+
+.btn-large i{
+  color: #fff; 
+  font-size: 4rem;
 }
 
 .expando {
@@ -118,9 +130,11 @@ h2>.material-icons {
 }
 
 .col-cell{
+  /*
   border: 1px;
   border-color: #CCC;
   border-style: solid;
+  */
   display: flex;
   flex-direction: column;
   padding: 0 !important;
